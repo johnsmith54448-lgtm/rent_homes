@@ -8,7 +8,7 @@
   <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- NEW HIGH-CONVERSION FONT -->
+  <!-- High-conversion font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Icons -->
@@ -19,7 +19,6 @@
       theme: {
         extend: {
           colors: {
-            primary: "#0F172A",
             accent: "#2563EB",
             glow: "#3B82F6",
             danger: "#EF4444"
@@ -37,16 +36,10 @@
       font-family: "Poppins", sans-serif;
     }
 
-    .hero-bg {
-      background-image: url("https://images.unsplash.com/photo-1568605114967-8130f3a36994");
-      background-size: cover;
-      background-position: center;
-    }
-
     /* CTA pulse animation */
     @keyframes pulseGlow {
       0% { box-shadow: 0 0 0 0 rgba(59,130,246,.6); }
-      70% { box-shadow: 0 0 0 25px rgba(59,130,246,0); }
+      70% { box-shadow: 0 0 0 22px rgba(59,130,246,0); }
       100% { box-shadow: 0 0 0 0 rgba(59,130,246,0); }
     }
 
@@ -60,16 +53,14 @@
   </style>
 </head>
 
-<body class="bg-slate-50 text-slate-900 antialiased">
+<body class="bg-white text-slate-900 antialiased">
 
-  <div class="relative min-h-screen flex items-center justify-center hero-bg">
-    <div class="absolute inset-0 bg-white/80 backdrop-blur-sm"></div>
-
-    <div class="relative z-10 w-full max-w-3xl px-6 text-center">
+  <main class="min-h-screen flex items-center justify-center">
+    <div class="w-full max-w-3xl px-6 py-20 text-center">
 
       <!-- Badge -->
       <div class="mb-6">
-        <span class="inline-flex items-center gap-2 px-4 py-1.5 bg-danger text-white text-xs font-bold uppercase tracking-wider rounded-full shadow-lg">
+        <span class="inline-flex items-center gap-2 px-4 py-1.5 bg-danger text-white text-xs font-bold uppercase tracking-wider rounded-full shadow-md">
           🔥 Limited Listings Available
         </span>
       </div>
@@ -86,10 +77,8 @@
       </p>
 
       <!-- =============================== -->
-      <!-- 🔥 MAIN CTA — PUT AFFILIATE LINK BELOW 🔥 -->
-      <!-- REPLACE: YOUR_AFFILIATE_LINK_HERE -->
+      <!-- 🔥 MAIN CTA — AFFILIATE LINK 🔥 -->
       <!-- =============================== -->
-
       <a href="https://afflat3d2.com/trk/lnk/BF6012F9-6C28-4D65-859D-2FC3A98BAC1A/?o=8199&c=918277&a=717778&k=0D86CF9B5E6B7F6AEC065C33F8A07D21&l=6911"
          target="_blank"
          rel="noopener noreferrer"
@@ -97,7 +86,7 @@
                 rounded-full text-xl font-extrabold text-white
                 bg-gradient-to-r from-blue-600 via-blue-500 to-indigo-600
                 hover:scale-105 active:scale-95 transition-all duration-300
-                shadow-[0_20px_50px_rgba(37,99,235,0.45)]">
+                shadow-[0_20px_45px_rgba(37,99,235,0.45)]">
         👉 Check Available Homes Now
       </a>
 
@@ -107,7 +96,7 @@
       </p>
 
       <!-- Benefits -->
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-16">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-10 mt-16">
 
         <div class="flex flex-col items-center gap-3">
           <span class="material-symbols-outlined text-4xl text-accent">payments</span>
@@ -134,7 +123,7 @@
       </footer>
 
     </div>
-  </div>
+  </main>
 
 </body>
 </html>
