@@ -1,109 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Affordable Rental Homes</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Affordable Homes Near You</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&display=swap" rel="stylesheet">
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-<style>
-  body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background: #ffffff;
-    color: #111827;
-  }
+  <!-- Professional Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
 
-  .container {
-    max-width: 480px;
-    margin: 0 auto;
-    padding: 50px 20px;
-    text-align: center;
-  }
-
-  .icon {
-    margin-bottom: 25px;
-  }
-
-  h1 {
-    font-size: 26px;
-    font-weight: 800;
-    line-height: 1.3;
-    margin-bottom: 18px;
-  }
-
-  p {
-    font-size: 15px;
-    color: #6b7280;
-    margin-bottom: 35px;
-  }
-
-  .cta {
-    display: block;
-    width: 100%;
-    padding: 18px;
-    background: #2563eb;
-    color: #ffffff;
-    font-size: 17px;
-    font-weight: 700;
-    border-radius: 12px;
-    text-decoration: none;
-    box-shadow: 0 10px 22px rgba(37, 99, 235, 0.25);
-    transition: background 0.2s ease, transform 0.1s ease;
-  }
-
-  .cta:hover {
-    background: #1d4ed8;
-  }
-
-  .cta:active {
-    transform: scale(0.97);
-  }
-
-  .note {
-    margin-top: 20px;
-    font-size: 12px;
-    color: #9ca3af;
-  }
-</style>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    a {
+      touch-action: manipulation;
+    }
+  </style>
 </head>
 
-<body>
+<body class="bg-white text-gray-900">
 
-<div class="container">
+  <main class="min-h-screen flex items-center justify-center px-6">
 
-  <!-- House SVG Icon -->
-  <div class="icon">
-    <svg width="70" height="70" viewBox="0 0 24 24" fill="none">
-      <path d="M3 10L12 3L21 10V20C21 20.55 20.55 21 20 21H4C3.45 21 3 20.55 3 20V10Z" fill="#2563eb"/>
-      <path d="M9 21V12H15V21" fill="#ffffff"/>
-    </svg>
-  </div>
+    <div class="max-w-xl w-full text-center">
 
-  <h1>
-    Affordable Rental Homes<br>
-    Available Near You
-  </h1>
+      <!-- Headline -->
+      <h1 class="text-3xl sm:text-5xl font-extrabold leading-tight mb-6">
+        Affordable Rental Homes <br>
+        <span class="text-blue-600">Available Near You</span>
+      </h1>
 
-  <p>
-    View low-cost rental listings in your area.
-    Fast & simple access.
-  </p>
+      <!-- Subheadline -->
+      <p class="text-lg text-gray-600 mb-10">
+        View low-cost rental options in your area.
+        Fast access. Simple process.
+      </p>
 
-  <a class="cta"
-     href="https://afflat3d2.com/trk/lnk/BF6012F9-6C28-4D65-859D-2FC3A98BAC1A/?o=23544&c=918277&a=717778&k=A57868A7E962952F86491C548B53289E&l=24605"
-     target="_blank"
-     rel="noopener noreferrer">
-     Check Available Homes Now
-  </a>
+      <!-- UPDATED CPA LINK -->
+      <a href="https://afflat3d2.com/trk/lnk/BF6012F9-6C28-4D65-859D-2FC3A98BAC1A/?o=23544&c=918277&a=717778&k=A57868A7E962952F86491C548B53289E&l=24605"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="block w-full py-5 rounded-xl text-lg font-bold text-white
+                bg-blue-600 hover:bg-blue-700
+                active:scale-95 transition-all duration-200
+                shadow-lg">
+         Check Available Homes Now
+      </a>
 
-  <div class="note">
-    USA listings only • No obligation
-  </div>
+      <!-- Trust Line -->
+      <p class="mt-6 text-sm text-gray-500">
+        USA listings only • No obligation
+      </p>
 
-</div>
+    </div>
+
+  </main>
 
 </body>
 </html>
