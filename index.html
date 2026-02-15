@@ -3,48 +3,40 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Affordable Rental Homes</title>
+  <title>Find Affordable Homes</title>
 
-  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- High-conversion font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            accent: "#2563EB",
-            glow: "#3B82F6",
-            danger: "#EF4444"
-          },
-          fontFamily: {
-            display: ["Poppins", "sans-serif"]
-          }
-        }
-      }
-    }
-  </script>
+  <!-- Stronger attention font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
 
   <style type="text/tailwindcss">
     body {
-      font-family: "Poppins", sans-serif;
+      font-family: "Montserrat", sans-serif;
     }
 
-    /* CTA pulse animation */
-    @keyframes pulseGlow {
-      0% { box-shadow: 0 0 0 0 rgba(59,130,246,.6); }
-      70% { box-shadow: 0 0 0 22px rgba(59,130,246,0); }
+    /* Animated gradient background */
+    .bg-animated {
+      background: linear-gradient(-45deg, #0f172a, #1e293b, #111827, #0f172a);
+      background-size: 400% 400%;
+      animation: gradientMove 10s ease infinite;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Strong glow pulse */
+    @keyframes pulseStrong {
+      0% { box-shadow: 0 0 0 0 rgba(59,130,246,0.7); }
+      70% { box-shadow: 0 0 0 25px rgba(59,130,246,0); }
       100% { box-shadow: 0 0 0 0 rgba(59,130,246,0); }
     }
 
-    .cta-pulse {
-      animation: pulseGlow 2.2s infinite;
+    .cta-strong {
+      animation: pulseStrong 2s infinite;
     }
 
     a {
@@ -53,77 +45,46 @@
   </style>
 </head>
 
-<body class="bg-white text-slate-900 antialiased">
+<body class="bg-animated min-h-screen flex items-center justify-center text-white">
 
-  <main class="min-h-screen flex items-center justify-center">
-    <div class="w-full max-w-3xl px-6 py-20 text-center">
+  <div class="bg-white/10 backdrop-blur-xl rounded-3xl p-10 sm:p-16 max-w-xl w-full text-center shadow-2xl">
 
-      <!-- Badge -->
-      <div class="mb-6">
-        <span class="inline-flex items-center gap-2 px-4 py-1.5 bg-danger text-white text-xs font-bold uppercase tracking-wider rounded-full shadow-md">
-          🔥 Limited Listings Available
-        </span>
-      </div>
-
-      <!-- Headline -->
-      <h1 class="text-4xl sm:text-6xl font-extrabold leading-tight mb-6">
-        Affordable Homes <br class="hidden sm:block"> You Can Actually Rent
-      </h1>
-
-      <!-- Subheadline -->
-      <p class="text-lg sm:text-xl text-slate-700 mb-10 max-w-2xl mx-auto">
-        Discover budget-friendly rentals and rent-to-own homes near you.  
-        Fast access. No hassle. No pressure.
-      </p>
-
-      <!-- =============================== -->
-      <!-- 🔥 MAIN CTA — AFFILIATE LINK 🔥 -->
-      <!-- =============================== -->
-      <a href="https://afflat3d2.com/trk/lnk/BF6012F9-6C28-4D65-859D-2FC3A98BAC1A/?o=8199&c=918277&a=717778&k=0D86CF9B5E6B7F6AEC065C33F8A07D21&l=6911"
-         target="_blank"
-         rel="noopener noreferrer"
-         class="cta-pulse inline-flex items-center justify-center w-full sm:w-auto min-w-[280px] px-10 h-16
-                rounded-full text-xl font-extrabold text-white
-                bg-gradient-to-r from-blue-600 via-blue-500 to-indigo-600
-                hover:scale-105 active:scale-95 transition-all duration-300
-                shadow-[0_20px_45px_rgba(37,99,235,0.45)]">
-        👉 Check Available Homes Now
-      </a>
-
-      <!-- Trust line -->
-      <p class="mt-4 text-sm text-slate-600 font-medium">
-        ⏱ Takes less than 60 seconds · No obligation
-      </p>
-
-      <!-- Benefits -->
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-10 mt-16">
-
-        <div class="flex flex-col items-center gap-3">
-          <span class="material-symbols-outlined text-4xl text-accent">payments</span>
-          <p class="font-semibold text-sm uppercase tracking-wide">Low Monthly Rent</p>
-        </div>
-
-        <div class="flex flex-col items-center gap-3">
-          <span class="material-symbols-outlined text-4xl text-accent">verified_user</span>
-          <p class="font-semibold text-sm uppercase tracking-wide">No Perfect Credit Needed</p>
-        </div>
-
-        <div class="flex flex-col items-center gap-3">
-          <span class="material-symbols-outlined text-4xl text-accent">public</span>
-          <p class="font-semibold text-sm uppercase tracking-wide">Nationwide Availability</p>
-        </div>
-
-      </div>
-
-      <!-- Footer -->
-      <footer class="mt-20">
-        <p class="text-xs text-slate-500 tracking-widest uppercase">
-          © 2026 Affordable Housing Platform
-        </p>
-      </footer>
-
+    <!-- Small urgency badge -->
+    <div class="mb-6">
+      <span class="bg-red-500 text-white text-xs font-bold px-4 py-2 rounded-full tracking-wider uppercase">
+        🔥 Limited Affordable Listings
+      </span>
     </div>
-  </main>
+
+    <!-- Big headline -->
+    <h1 class="text-3xl sm:text-5xl font-extrabold leading-tight mb-6">
+      Affordable Homes <br>
+      <span class="text-blue-400">Near You</span>
+    </h1>
+
+    <!-- Minimal supporting text -->
+    <p class="text-gray-300 text-lg mb-10">
+      Budget-friendly rentals available in your area.  
+      Takes less than 60 seconds.
+    </p>
+
+    <!-- MAIN CPA BUTTON -->
+    <a href="https://afflat3d2.com/trk/lnk/BF6012F9-6C28-4D65-859D-2FC3A98BAC1A/?o=8199&c=918277&a=717778&k=0D86CF9B5E6B7F6AEC065C33F8A07D21&l=6911"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="cta-strong block w-full py-5 rounded-full text-xl font-extrabold
+              bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-600
+              hover:scale-105 active:scale-95 transition-all duration-300
+              shadow-[0_20px_60px_rgba(59,130,246,0.6)]">
+      👉 CHECK AVAILABLE HOMES NOW
+    </a>
+
+    <!-- Trust line -->
+    <p class="mt-6 text-sm text-gray-400">
+      No obligation • USA only 🇺🇸
+    </p>
+
+  </div>
 
 </body>
 </html>
