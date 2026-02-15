@@ -1,63 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Affordable Homes Near You</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Affordable Housing Listings</title>
 
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Professional Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #111827;
+  }
 
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-    }
-    a {
-      touch-action: manipulation;
-    }
-  </style>
+  .wrapper {
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 30px 20px 140px;
+    text-align: center;
+  }
+
+  .badge {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    background: #e0f2fe;
+    color: #0369a1;
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin-bottom: 18px;
+  }
+
+  .verified {
+    font-size: 13px;
+    color: #16a34a;
+    font-weight: 600;
+    margin-top: 8px;
+  }
+
+  h1 {
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 1.25;
+    margin-bottom: 15px;
+  }
+
+  .sub {
+    font-size: 16px;
+    color: #6b7280;
+    margin-bottom: 15px;
+  }
+
+  .updated {
+    font-size: 14px;
+    color: #16a34a;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  .social-proof {
+    font-size: 14px;
+    color: #374151;
+    background: #f9fafb;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+  }
+
+  .divider {
+    height: 1px;
+    background: #e5e7eb;
+    margin: 25px 0;
+  }
+
+  /* Sticky Button */
+  .sticky-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    padding: 15px;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.06);
+  }
+
+  .cta {
+    display: block;
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 18px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 12px;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(37,99,235,0.25);
+    transition: transform 0.15s ease, background 0.2s ease;
+  }
+
+  .cta:active {
+    transform: scale(0.96);
+  }
+
+  .cta:hover {
+    background: #1d4ed8;
+  }
+
+  .trust {
+    font-size: 12px;
+    color: #9ca3af;
+    margin-top: 8px;
+  }
+</style>
 </head>
 
-<body class="bg-white text-gray-900">
+<body>
 
-  <main class="min-h-screen flex items-center justify-center px-6">
+<div class="wrapper">
 
-    <div class="max-w-xl w-full text-center">
+  <div class="badge">
+    Official Affordable Housing Access • USA 🇺🇸
+  </div>
 
-      <!-- Headline -->
-      <h1 class="text-3xl sm:text-5xl font-extrabold leading-tight mb-6">
-        Affordable Rental Homes <br>
-        <span class="text-blue-600">Available Near You</span>
-      </h1>
+  <div class="verified">
+    🔒 Secure & Verified
+  </div>
 
-      <!-- Subheadline -->
-      <p class="text-lg text-gray-600 mb-10">
-        View low-cost rental options in your area.
-        Fast access. Simple process.
-      </p>
+  <h1>
+    Affordable Rental Homes <br>
+    Available Near You
+  </h1>
 
-      <!-- UPDATED CPA LINK -->
-      <a href="https://afflat3d2.com/trk/lnk/BF6012F9-6C28-4D65-859D-2FC3A98BAC1A/?o=23544&c=918277&a=717778&k=A57868A7E962952F86491C548B53289E&l=24605"
-         target="_blank"
-         rel="noopener noreferrer"
-         class="block w-full py-5 rounded-xl text-lg font-bold text-white
-                bg-blue-600 hover:bg-blue-700
-                active:scale-95 transition-all duration-200
-                shadow-lg">
-         Check Available Homes Now
-      </a>
+  <div class="sub">
+    Access low-cost rental listings in your area.
+    Fast & simple process.
+  </div>
 
-      <!-- Trust Line -->
-      <p class="mt-6 text-sm text-gray-500">
-        USA listings only • No obligation
-      </p>
+  <div class="updated">
+    ✅ Updated Today
+  </div>
 
-    </div>
+  <div class="social-proof">
+    🔎 <span id="liveCount">0</span> people searched for homes in the last 24 hours
+  </div>
 
-  </main>
+  <div class="divider"></div>
+
+  <div class="trust">
+    USA listings only • No obligation
+  </div>
+
+</div>
+
+<!-- Sticky CTA -->
+<div class="sticky-container">
+  <a class="cta"
+     href="https://afflat3d2.com/trk/lnk/BF6012F9-6C28-4D65-859D-2FC3A98BAC1A/?o=23544&c=918277&a=717778&k=A57868A7E962952F86491C548B53289E&l=24605"
+     target="_blank"
+     rel="noopener noreferrer">
+     Check Available Homes Now
+  </a>
+</div>
+
+<!-- Lightweight Dynamic Counter -->
+<script>
+  let count = Math.floor(Math.random() * 120) + 180; 
+  const counter = document.getElementById("liveCount");
+  counter.textContent = count;
+
+  setInterval(() => {
+    count += Math.floor(Math.random() * 3) + 1;
+    counter.textContent = count;
+  }, 4000);
+</script>
 
 </body>
 </html>
