@@ -1,63 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Affordable Homes Near You</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+<title>Find Affordable Homes Near You</title>
 
-  <!-- Professional Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
 
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-    }
-    a {
-      touch-action: manipulation;
-    }
-  </style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+body{
+font-family:'Inter',sans-serif;
+background:#f8fafc;
+}
+
+.cta{
+background:linear-gradient(135deg,#2563eb,#1d4ed8);
+}
+
+.cta:hover{
+transform:scale(1.03);
+}
+
+.arrow{
+animation:bounce 1.6s infinite;
+}
+
+@keyframes bounce{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-6px);}
+}
+</style>
+
 </head>
 
-<body class="bg-white text-gray-900">
+<body class="text-gray-900">
 
-  <main class="min-h-screen flex items-center justify-center px-6">
+<main class="min-h-screen flex items-center justify-center px-6">
 
-    <div class="max-w-xl w-full text-center">
+<div class="max-w-xl w-full text-center">
 
-      <!-- Headline -->
-      <h1 class="text-3xl sm:text-5xl font-extrabold leading-tight mb-6">
-        Affordable Rental Homes <br>
-        <span class="text-blue-600">Available Near You</span>
-      </h1>
+<!-- Badge -->
+<div class="inline-block bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-sm font-semibold mb-5">
+🏠 Updated Listings Near You
+</div>
 
-      <!-- Subheadline -->
-      <p class="text-lg text-gray-600 mb-10">
-        View low-cost rental options in your area.
-        Fast access. Simple process.
-      </p>
+<!-- Headline -->
+<h1 class="text-4xl sm:text-5xl font-extrabold leading-tight mb-6">
+Affordable Homes<br>
+<span class="text-blue-600">Available In Your Area</span>
+</h1>
 
-      <!-- UPDATED CPA LINK -->
-      <a href="https://afflat3d2.com/trk/lnk/BF6012F9-6C28-4D65-859D-2FC3A98BAC1A/?o=23544&c=918277&a=717778&k=A57868A7E962952F86491C548B53289E&l=24605"
-         target="_blank"
-         rel="noopener noreferrer"
-         class="block w-full py-5 rounded-xl text-lg font-bold text-white
-                bg-blue-600 hover:bg-blue-700
-                active:scale-95 transition-all duration-200
-                shadow-lg">
-         Check Available Homes Now
-      </a>
+<!-- Subheadline -->
+<p class="text-lg text-gray-600 mb-8">
+Enter your ZIP code to see <strong>low-cost rental homes near you.</strong>  
+Takes less than 30 seconds.
+</p>
 
-      <!-- Trust Line -->
-      <p class="mt-6 text-sm text-gray-500">
-        USA listings only • No obligation
-      </p>
+<!-- Arrow -->
+<div class="arrow text-3xl mb-3">
+👇
+</div>
 
-    </div>
+<!-- CTA Button -->
+<a href="https://afflat3d3.com/trk/lnk/BF6012F9-6C28-4D65-859D-2FC3A98BAC1A/?o=8199&c=918277&a=717778&k=0D86CF9B5E6B7F6AEC065C33F8A07D21&l=6911"
+target="_blank"
+rel="noopener noreferrer"
+class="cta block w-full py-5 rounded-xl text-xl font-extrabold text-white
+shadow-xl transition-all duration-200 active:scale-95">
 
-  </main>
+View Homes Near Me →
+
+</a>
+
+<!-- Secondary CTA -->
+<a href="https://afflat3d3.com/trk/lnk/BF6012F9-6C28-4D65-859D-2FC3A98BAC1A/?o=8199&c=918277&a=717778&k=0D86CF9B5E6B7F6AEC065C33F8A07D21&l=6911"
+target="_blank"
+class="block mt-4 text-blue-600 font-semibold text-sm">
+
+See If You Qualify →
+
+</a>
+
+<!-- Trust -->
+<div class="mt-8 text-sm text-gray-500 space-y-1">
+<p>✔ USA Listings Only</p>
+<p>✔ No Credit Check To Browse</p>
+<p>✔ No Obligation</p>
+</div>
+
+</div>
+
+</main>
 
 </body>
 </html>
